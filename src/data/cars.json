@@ -1,0 +1,258 @@
+[
+    {
+        "brand": "Renault",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Renault_Logo.svg",
+        "updatedAt": "2025-08-15T00:00:00+00:00",
+        "models": [
+            {
+            "model": "Clio V",
+            "fuel": "Essence/Diesel",
+            "transmission": "Manuelle/Automatique",
+            "engineDisplacement": 1.0,
+            "horsepower": 100,
+            "image": "https://example.com/images/clio_v.jpg"
+            },
+            {
+            "model": "Mégane IV",
+            "fuel": "Essence/Diesel",
+            "transmission": "Manuelle/Automatique",
+            "engineDisplacement": 1.3,
+            "horsepower": 140,
+            "image": "https://example.com/images/megane_iv.jpg"
+            },
+            {
+            "model": "Twingo III",
+            "fuel": "Essence",
+            "transmission": "Manuelle/Automatique",
+            "engineDisplacement": 0.9,
+            "horsepower": 90,
+            "image": "https://example.com/images/twingo_iii.jpg"
+            },
+            {
+            "model": "Captur II",
+            "fuel": "Essence/Diesel",
+            "transmission": "Manuelle/Automatique",
+            "engineDisplacement": 1.3,
+            "horsepower": 130,
+            "image": "https://example.com/images/captur_ii.jpg"
+            },
+            {
+            "model": "Kangoo II",
+            "fuel": "Diesel",
+            "transmission": "Manuelle",
+            "engineDisplacement": 1.5,
+            "horsepower": 110,
+            "image": "https://example.com/images/kangoo_ii.jpg"
+            }
+        ]
+
+    },
+    
+    {
+        "brand": "Peugeot",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Peugeot_Logo.svg",
+        "updatedAt": "2025-08-15T00:00:00+00:00",
+        "models": [
+            {
+            "model": "208",
+            "fuel": "Essence",
+            "transmission": "Manuelle/Automatique",
+            "engineDisplacement": 1.2,
+            "horsepower": 100,
+            "image": "https://example.com/images/peugeot_208.jpg"
+            },
+            {
+            "model": "308",
+            "fuel": "Essence",
+            "transmission": "Manuelle/Automatique",
+            "engineDisplacement": 1.5,
+            "horsepower": 130,
+            "image": "https://example.com/images/peugeot_308.jpg"
+            },
+            {
+            "model": "2008",
+            "fuel": "Essence",
+            "transmission": "Manuelle/Automatique",
+            "engineDisplacement": 1.2,
+            "horsepower": 110,
+            "image": "https://example.com/images/peugeot_2008.jpg"
+            },
+            {
+            "model": "3008",
+            "fuel": "Essence",
+            "transmission": "Manuelle/Automatique",
+            "engineDisplacement": 1.6,
+            "horsepower": 150,
+            "image": "https://example.com/images/peugeot_3008.jpg"
+            },
+            {
+            "model": "5008",
+            "fuel": "Essence",
+            "transmission": "Manuelle/Automatique",
+            "engineDisplacement": 1.6,
+            "horsepower": 180,
+            "image": "https://example.com/images/peugeot_5008.jpg"
+            },
+            {
+            "model": "Rifter",
+            "fuel": "Diesel",
+            "transmission": "Manuelle",
+            "engineDisplacement": 1.5,
+            "horsepower": 130,
+            "image": "https://example.com/images/peugeot_rifter.jpg"
+            }
+        ]
+        },
+        {
+            "brand": "Volkswagen",
+            "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Volkswagen_Logo_2019.svg",
+            "updatedAt": "2025-08-15T00:00:00+00:00",
+            "models": [
+                {
+                    "model": "Golf",
+                    "fuel": "Essence/Diesel",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 1.5,
+                    "horsepower": 130,
+                    "image": "https://example.com/images/vw_golf.jpg"
+                },
+                {
+                    "model": "Polo",
+                    "fuel": "Essence/Diesel",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 1.0,
+                    "horsepower": 95,
+                    "image": "https://example.com/images/vw_polo.jpg"
+                },
+                {
+                    "model": "T-Roc",
+                    "fuel": "Essence/Diesel",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 1.5,
+                    "horsepower": 150,
+                    "image": "https://example.com/images/vw_t-roc.jpg"
+                },
+                {
+                    "model": "T-Cross",
+                    "fuel": "Essence/Diesel",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 1.0,
+                    "horsepower": 110,
+                    "image": "https://example.com/images/vw_t-cross.jpg"
+                },
+                {
+                    "model": "Passat",
+                    "fuel": "Essence/Diesel",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 2.0,
+                    "horsepower": 190,
+                    "image": "https://example.com/images/vw_passat.jpg"
+                },
+                {
+                    "model": "Touareg",
+                    "fuel": "Essence/Diesel",
+                    "transmission": "Automatique",
+                    "engineDisplacement": 3.0,
+                    "horsepower": 286,
+                    "image": "https://example.com/images/vw_touareg.jpg"
+                }
+            ]
+        },
+        {
+            "brand": "Citroën",
+            "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Citroen_logo.svg",
+            "updatedAt": "2025-08-15T00:00:00+00:00",
+            "models": [
+                {
+                    "model": "C3",
+                    "fuel": "Essence/Diesel",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 1.2,
+                    "horsepower": 110,
+                    "image": "https://example.com/images/citroen_c3.jpg"
+                },
+                {
+                    "model": "C4",
+                    "fuel": "Essence/Diesel",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 1.5,
+                    "horsepower": 130,
+                    "image": "https://example.com/images/citroen_c4.jpg"
+                },
+                {
+                    "model": "C5 Aircross",
+                    "fuel": "Essence/Diesel",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 1.6,
+                    "horsepower": 180,
+                    "image": "https://example.com/images/citroen_c5_aircross.jpg"
+                },
+                {
+                    "model": "Berlingo",
+                    "fuel": "Diesel",
+                    "transmission": "Manuelle",
+                    "engineDisplacement": 1.5,
+                    "horsepower": 130,
+                    "image": "https://example.com/images/citroen_berlingo.jpg"
+                },
+                {
+                    "model": "C1",
+                    "fuel": "Essence",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 1.0,
+                    "horsepower": 72,
+                    "image": "https://example.com/images/citroen_c1.jpg"
+                }
+            ]
+        },
+        {
+            "brand": "Toyota",
+            "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_logo.svg",
+            "updatedAt": "2025-08-15T00:00:00+00:00",
+            "models": [
+                {
+                    "model": "Yaris",
+                    "fuel": "Essence/Hybride",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 1.5,
+                    "horsepower": 120,
+                    "image": "https://example.com/images/toyota_yaris.jpg"
+                },
+                {
+                    "model": "Corolla",
+                    "fuel": "Essence/Hybride",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 1.8,
+                    "horsepower": 140,
+                    "image": "https://example.com/images/toyota_corolla.jpg"
+                },
+                {
+                    "model": "C-HR",
+                    "fuel": "Hybride",
+                    "transmission": "Automatique",
+                    "engineDisplacement": 1.8,
+                    "horsepower": 184,
+                    "image": "https://example.com/images/toyota_c-hr.jpg"
+                },
+                {
+                    "model": "RAV4",
+                    "fuel": "Essence/Hybride",
+                    "transmission": "Automatique",
+                    "engineDisplacement": 2.5,
+                    "horsepower": 222,
+                    "image": "https://example.com/images/toyota_rav4.jpg"
+                },
+                {
+                    "model": "Hilux",
+                    "fuel": "Diesel",
+                    "transmission": "Manuelle/Automatique",
+                    "engineDisplacement": 2.4,
+                    "horsepower": 150,
+                    "image": "https://example.com/images/toyota_hilux.jpg"
+                }
+            ]
+        }
+
+
+
+]

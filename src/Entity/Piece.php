@@ -52,6 +52,9 @@ class Piece
     #[ORM\ManyToMany(targetEntity: ServicePrice::class, mappedBy: 'pieces')]
     private Collection $servicePrices;
 
+    #[ORM\Column]
+    private ?bool $isActive = null;
+
     public function __construct()
     {
         $this->compatibleCars = new ArrayCollection();
@@ -206,6 +209,18 @@ class Piece
         if ($this->servicePrices->removeElement($servicePrice)) {
             $servicePrice->removePiece($this);
         }
+
+        return $this;
+    }
+
+    public function isActive(): ?bool
+    {
+        return $this->isActive;
+    }
+
+    public function setIsActive(bool $isActive): static
+    {
+        $this->isActive = $isActive;
 
         return $this;
     }

@@ -15,30 +15,6 @@ class Car
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 25)]
-    private ?string $brand = null;
-
-    #[ORM\Column(length: 255, nullable: true)]
-    private ?string $brandLogo = null;
-
-    #[ORM\Column(length: 25)]
-    private ?string $model = null;
-
-    #[ORM\Column]
-    private ?int $year = null;
-
-    #[ORM\Column(length: 25)]
-    private ?string $fuel = null;
-
-    #[ORM\Column(length: 25)]
-    private ?string $transmission = null;
-
-    #[ORM\Column(nullable: true)]
-    private ?float $engineDisplacement = null;
-
-    #[ORM\Column(nullable: true)]
-    private ?int $horsepower = null;
-
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $image = null;
 
@@ -63,112 +39,32 @@ class Car
     #[ORM\ManyToMany(targetEntity: Piece::class, mappedBy: 'compatibleCars')]
     private Collection $pieces;
 
+    #[ORM\Column(length: 255)]
+    private ?string $name = null;
+
+    #[ORM\ManyToOne(inversedBy: 'cars')]
+    private ?Brand $brand = null;
+
+    /**
+     * @var Collection<int, Model>
+     */
+    #[ORM\OneToMany(targetEntity: Model::class, mappedBy: 'car')]
+    private Collection $models;
+
+    #[ORM\Column]
+    private ?bool $isActive = null;
+
     public function __construct()
     {
         $this->userCars = new ArrayCollection();
         $this->servicePrices = new ArrayCollection();
         $this->pieces = new ArrayCollection();
+        $this->models = new ArrayCollection();
     }
 
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getBrand(): ?string
-    {
-        return $this->brand;
-    }
-
-    public function setBrand(string $brand): static
-    {
-        $this->brand = $brand;
-
-        return $this;
-    }
-
-    public function getBrandLogo(): ?string
-    {
-        return $this->brandLogo;
-    }
-
-    public function setBrandLogo(?string $brandLogo): static
-    {
-        $this->brandLogo = $brandLogo;
-
-        return $this;
-    }
-
-    public function getModel(): ?string
-    {
-        return $this->model;
-    }
-
-    public function setModel(string $model): static
-    {
-        $this->model = $model;
-
-        return $this;
-    }
-
-    public function getYear(): ?int
-    {
-        return $this->year;
-    }
-
-    public function setYear(int $year): static
-    {
-        $this->year = $year;
-
-        return $this;
-    }
-
-    public function getFuel(): ?string
-    {
-        return $this->fuel;
-    }
-
-    public function setFuel(string $fuel): static
-    {
-        $this->fuel = $fuel;
-
-        return $this;
-    }
-
-    public function getTransmission(): ?string
-    {
-        return $this->transmission;
-    }
-
-    public function setTransmission(string $transmission): static
-    {
-        $this->transmission = $transmission;
-
-        return $this;
-    }
-
-    public function getEngineDisplacement(): ?float
-    {
-        return $this->engineDisplacement;
-    }
-
-    public function setEngineDisplacement(?float $engineDisplacement): static
-    {
-        $this->engineDisplacement = $engineDisplacement;
-
-        return $this;
-    }
-
-    public function getHorsepower(): ?int
-    {
-        return $this->horsepower;
-    }
-
-    public function setHorsepower(?int $horsepower): static
-    {
-        $this->horsepower = $horsepower;
-
-        return $this;
     }
 
     public function getImage(): ?string
@@ -275,6 +171,72 @@ class Car
         if ($this->pieces->removeElement($piece)) {
             $piece->removeCompatibleCar($this);
         }
+
+        return $this;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): static
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    public function getBrand(): ?Brand
+    {
+        return $this->brand;
+    }
+
+    public function setBrand(?Brand $brand): static
+    {
+        $this->brand = $brand;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Model>
+     */
+    public function getModels(): Collection
+    {
+        return $this->models;
+    }
+
+    public function addModel(Model $model): static
+    {
+        if (!$this->models->contains($model)) {
+            $this->models->add($model);
+            $model->setCar($this);
+        }
+
+        return $this;
+    }
+
+    public function removeModel(Model $model): static
+    {
+        if ($this->models->removeElement($model)) {
+            // set the owning side to null (unless already changed)
+            if ($model->getCar() === $this) {
+                $model->setCar(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function isActive(): ?bool
+    {
+        return $this->isActive;
+    }
+
+    public function setIsActive(bool $isActive): static
+    {
+        $this->isActive = $isActive;
 
         return $this;
     }
